@@ -11,16 +11,17 @@ import pe.com.project2.ms.infraestructure.event.WalletAccountCreatedEvent;
 public class WalletHolderKafkaProducer {
 
     private final KafkaTemplate<String, WalletAccountCreatedEvent> kafkaTemplate;
-    private final String topicName;
+    private final String topic;
 
-    public WalletHolderKafkaProducer(KafkaTemplate<String, WalletAccountCreatedEvent> kafkaTemplate, @Value("${spring.kafka.consumer.topic.name}") String topicName) {
+    public WalletHolderKafkaProducer(KafkaTemplate<String, WalletAccountCreatedEvent> kafkaTemplate,
+                                     @Value("${spring.kafka.consumer.topic.name}") String topic) {
         this.kafkaTemplate = kafkaTemplate;
-        this.topicName = topicName;
+        this.topic = topic;
     }
 
     public void sendMessage(WalletAccountCreatedEvent walletAccountCreatedEvent) {
         log.debug("Producing message {}", walletAccountCreatedEvent.toString());
-        this.kafkaTemplate.send(topicName, walletAccountCreatedEvent);
+        kafkaTemplate.send(topic, walletAccountCreatedEvent);
     }
 
 }

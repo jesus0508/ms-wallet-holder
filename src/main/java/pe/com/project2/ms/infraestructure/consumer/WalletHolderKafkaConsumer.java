@@ -16,6 +16,7 @@ public class WalletHolderKafkaConsumer {
 
     @KafkaListener(topics = {"WALLET-ACCOUNT-CREATED"}, groupId = "WALLET")
     public void consume(WalletAccountCreatedEvent walletAccountCreated) {
+        log.debug("Consuming Message {}", walletAccountCreated);
         createWalletHolderUseCase.save(walletAccountCreated).subscribe(c -> log.debug(c.toString()));
     }
 
