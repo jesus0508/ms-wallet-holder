@@ -1,4 +1,4 @@
-package pe.com.project2.ms.infraestructure.rest;
+package pe.com.project4.ms.infrastructure.rest;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

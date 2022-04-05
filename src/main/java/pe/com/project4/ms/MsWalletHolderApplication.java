@@ -1,4 +1,4 @@
-package pe.com.project2.ms;
+package pe.com.project4.ms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

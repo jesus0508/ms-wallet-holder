@@ -1,10 +1,12 @@
-package pe.com.project2.ms.infraestructure.persistence.mongodb;
+package pe.com.project4.ms.infrastructure.persistence.mongodb;
 
 import lombok.RequiredArgsConstructor;
+import pe.com.project4.ms.application.repository.WalletHolderRepository;
+import pe.com.project4.ms.domain.WalletHolder;
+import pe.com.project4.ms.infrastructure.persistence.model.WalletHolderDao;
+
 import org.springframework.stereotype.Repository;
-import pe.com.project2.ms.application.repository.WalletHolderRepository;
-import pe.com.project2.ms.domain.WalletHolder;
-import pe.com.project2.ms.infraestructure.persistence.model.WalletHolderDao;
+
 import reactor.core.publisher.Mono;
 
 @Repository

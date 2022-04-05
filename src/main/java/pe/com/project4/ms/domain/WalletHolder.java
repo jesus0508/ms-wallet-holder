@@ -1,4 +1,4 @@
-package pe.com.project2.ms.domain;
+package pe.com.project4.ms.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

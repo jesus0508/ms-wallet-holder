@@ -1,10 +1,10 @@
-package pe.com.project2.ms.infraestructure.event;
+package pe.com.project4.ms.infrastructure.event;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import pe.com.project2.ms.domain.DocumentType;
-import pe.com.project2.ms.domain.WalletHolder;
+import pe.com.project4.ms.domain.DocumentType;
+import pe.com.project4.ms.domain.WalletHolder;
 
 @Data
 @AllArgsConstructor

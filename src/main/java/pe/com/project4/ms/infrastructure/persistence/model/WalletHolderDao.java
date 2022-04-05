@@ -1,13 +1,14 @@
-package pe.com.project2.ms.infraestructure.persistence.model;
+package pe.com.project4.ms.infrastructure.persistence.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import pe.com.project4.ms.domain.DocumentType;
+import pe.com.project4.ms.domain.WalletHolder;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
-import pe.com.project2.ms.domain.DocumentType;
-import pe.com.project2.ms.domain.WalletHolder;
 
 @Data
 @AllArgsConstructor

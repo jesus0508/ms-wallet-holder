@@ -1,6 +1,6 @@
-package pe.com.project2.ms.application.repository;
+package pe.com.project4.ms.application.repository;
 
-import pe.com.project2.ms.domain.WalletHolder;
+import pe.com.project4.ms.domain.WalletHolder;
 import reactor.core.publisher.Mono;
 
 public interface WalletHolderRepository {

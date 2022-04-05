@@ -1,11 +1,12 @@
-package pe.com.project2.ms.infraestructure.consumer;
+package pe.com.project4.ms.infrastructure.consumer;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import pe.com.project4.ms.application.CreateWalletHolderUseCase;
+import pe.com.project4.ms.infrastructure.event.WalletAccountCreatedEvent;
+
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
-import pe.com.project2.ms.application.CreateWalletHolderUseCase;
-import pe.com.project2.ms.infraestructure.event.WalletAccountCreatedEvent;
 
 @Component
 @RequiredArgsConstructor

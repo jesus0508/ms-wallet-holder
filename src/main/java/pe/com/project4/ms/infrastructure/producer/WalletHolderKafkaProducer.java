@@ -1,10 +1,11 @@
-package pe.com.project2.ms.infraestructure.producer;
+package pe.com.project4.ms.infrastructure.producer;
 
 import lombok.extern.slf4j.Slf4j;
+import pe.com.project4.ms.infrastructure.event.WalletAccountCreatedEvent;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
-import pe.com.project2.ms.infraestructure.event.WalletAccountCreatedEvent;
 
 @Component
 @Slf4j

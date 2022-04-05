@@ -18,7 +18,7 @@ spring:
     properties:
       spring.json.trusted.packages: "*"
     producer:
-      key-serializer: org.apache.kafka.common.serialization.LongSerializer
+      key-serializer: org.apache.kafka.common.serialization.StringDeserializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 
 #===========================================================================

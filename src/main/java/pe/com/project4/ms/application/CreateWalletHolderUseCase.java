@@ -1,7 +1,7 @@
-package pe.com.project2.ms.application;
+package pe.com.project4.ms.application;
 
-import pe.com.project2.ms.domain.WalletHolder;
-import pe.com.project2.ms.infraestructure.event.WalletAccountCreatedEvent;
+import pe.com.project4.ms.domain.WalletHolder;
+import pe.com.project4.ms.infrastructure.event.WalletAccountCreatedEvent;
 import reactor.core.publisher.Mono;
 
 public interface CreateWalletHolderUseCase {
